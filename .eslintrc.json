@@ -1,0 +1,147 @@
+{
+  "settings": {
+    "react": { "version": "detect" }
+  },
+  "env": {
+    "amd": true,
+    "browser": true,
+    "es2021": true,
+    "node": true
+  },
+  "parserOptions": {
+    "ecmaFeatures": { "jsx": true },
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:jsx-a11y/recommended",
+    "plugin:import/recommended"
+
+    // LAST EXTEND
+    // "prettier"
+  ],
+  "plugins": [
+    "react",
+    "react-hooks",
+    "jsx-a11y",
+    "import",
+
+    // LAST PLUGIN
+    "prettier"
+  ],
+  "overrides": [
+    {
+      "files": ["**/*.stories.*"],
+      "rules": { "import/no-anonymous-default-export": "off" }
+    }
+  ],
+  "rules": {
+    "prettier/prettier": 0,
+
+    /* JAVASCRIPT */
+    "no-var": "warn",
+    "no-shadow": "warn",
+    // "max-len": ["warn", { "code": 160 }],
+    "semi": ["warn", "never"],
+    // "indent": ["warn", "tab"], // ???
+    // "comma-dangle": ["warn", "never"],
+    "quotes": [
+      "error",
+      "single",
+      { "avoidEscape": true, "allowTemplateLiterals": true }
+    ],
+    // "arrow-parens": ["warn", "as-needed", { "requireForBlockBody": true }],
+    // "arrow-body-style": ["warn", "as-needed"],
+    "space-infix-ops": "warn",
+    "arrow-spacing": ["warn", { "before": true, "after": true }],
+    "keyword-spacing": ["warn", { "after": true }],
+    "key-spacing": ["warn", { "mode": "minimum" }],
+    "space-before-blocks": ["warn", "always"],
+    "object-curly-spacing": ["warn", "always"],
+    "array-bracket-spacing": ["warn", "always"],
+    "space-before-function-paren": ["warn", "always"],
+    "template-tag-spacing": ["warn", "never"],
+    // "template-curly-spacing": ["warn", "always"],
+    // "comma-spacing": ["warn", { "before": false, "after": true }]
+    // "computed-property-spacing": ["warn", "always"],
+    // "space-in-parens": ["warn", "always"],
+    "linebreak-style": 0,
+    "no-unused-vars": ["warn", { "vars": "all" }],
+
+    /* REACT */
+    "jsx-quotes": ["warn", "prefer-double"],
+    "react/jsx-uses-vars": "warn",
+    "react/jsx-pascal-case": "warn",
+    "react/jsx-first-prop-new-line": ["warn", "multiline"],
+    "react/jsx-max-props-per-line": ["warn", { "maximum": 3 }],
+    "react/jsx-closing-bracket-location": ["warn", "tag-aligned"],
+    "react/jsx-tag-spacing": ["error", { "beforeSelfClosing": "always" }],
+    "react/no-unescaped-entities": ["warn", { "forbid": ["<", ">", "{", "}"] }],
+    "react/jsx-curly-spacing": [
+      "warn",
+      {
+        "when": "never",
+        "attributes": { "when": "always" },
+        "spacing": { "objectLiterals": "never" }
+      }
+    ],
+    "react/jsx-curly-newline": [
+      "warn",
+      {
+        "multiline": "consistent",
+        "singleline": "consistent"
+      }
+    ],
+    "react/jsx-wrap-multilines": [
+      "warn",
+      {
+        "arrow": "parens-new-line",
+        "logical": "parens-new-line",
+        "declaration": "parens-new-line",
+        "return": "parens-new-line"
+      }
+    ],
+    "react/prop-types": 0,
+    "react/react-in-jsx-scope": 0,
+    "react/jsx-boolean-value": 0,
+    "react/require-default-props": 0,
+    // "react/no-unused-prop-styles": "warn"
+    // "react/deconstructing-assignment": "warn"
+
+    /* REACT-HOOKS */
+    "react-hooks/rules-of-hooks": "warn",
+    "react-hooks/exhaustive-deps": "warn",
+
+    /* REACT-ACCESSIBILITY */
+    "jsx-a11y/accessible-emoji": 0,
+    "jsx-a11y/anchor-is-valid": [
+      "error",
+      {
+        "components": ["Link"],
+        "specialLink": ["hrefLeft", "hrefRight"],
+        "aspects": ["invalidHref", "preferButton"]
+      }
+    ],
+    "jsx-a11y/label-has-associated-control": [
+      "error",
+      {
+        "assert": "either"
+      }
+    ],
+
+    /* IMPORT & EXPORT */
+    "import/named": "warn",
+    "import/extensions": 0,
+    "import/no-unresolved": 0,
+    "object-curly-newline": [
+      "warn",
+      {
+        "ImportDeclaration": { "multiline": false, "minProperties": 3 },
+        "ExportDeclaration": { "multiline": false, "minProperties": 3 }
+      }
+    ]
+  }
+}

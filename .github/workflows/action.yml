@@ -1,0 +1,39 @@
+name: Action 🎲 # 1
+
+on:
+	# pull_request:
+	push:
+		paths:
+			- '**.html'
+			- '**.js'
+			- '**.jsx'
+		paths-ignore:
+			- '**.md'
+			- '**.mdx'
+			- '**.yml'
+			- '**.yaml'
+		branch: [
+			main,
+			develop
+		]
+
+jobs:
+  Action:
+    name: Action 🎲
+    runs-on: ubuntu-latest
+    steps:
+      - name: 👟 Start
+      - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
+      - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
+			- name: ⚪ Checkout repo
+  			uses: actions/checkout@v3
+			- run: echo "💡 The ${{ github.repository }} repository has been cloned to the runner."
+      - run: echo "📀 The workflow is now ready to test your code on the runner."
+      - name: List files in the repository
+        run: |
+          ls ${{ github.workspace }}
+      - name: 🏁 Finish (1)
+        env: # Or as an environment variable
+          MY_NAME: ${{ secrets.MY_NAME }}
+        run: |
+          echo "🍏 This job's status is ${{ job.status }}. Congrats you are good to go $MY_NAME"

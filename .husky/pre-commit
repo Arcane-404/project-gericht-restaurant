@@ -1,0 +1,41 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+echo '👼⏳🏗️  Code styling and building your work before checking branch and commit';
+
+# —— Style local modified work ——
+npm run stage-all;
+
+# —— Check Prettier ——
+npm run check:format ||
+(
+  echo '🟠🟠 FORMAT FAILED - Your format has an error 🟠🟠
+    Prettier Check Failed. Make the required changes listed above, add changes and try commit again.
+    Either "npm run check:format" or "npm run apply:format".
+  ';
+  false;
+);
+
+# —— Check ESLint ——
+npm run check:lint ||
+(
+  echo '🟡🟡 LINT FAILED - Your lint has an error 🟡🟡
+    ESLint Check Failed... Make the required changes listed above, add changes, and try to commit again.
+    Either "npm run check:lint" or "npm run apply:lint".
+  ';
+  false;
+);
+
+# echo '🤔🧐 Alright.. Code looks good to me.. Trying to build now. 🤔🧐';
+
+# —— Check Build ——
+# npm run build:dev ||
+# (
+#   echo '❌👷🥵 YOUR BUILD FAILED - Go live in a box! ❌👷🥵
+#     Build Release Failed... View the errors above to see why.';
+#   false;
+# )
+# && npm run unbuild
+
+# If everything passes - Now we can commit
+echo '✅✅✅ PRE-COMMIT — Pass! You won (1). ✅✅✅';

@@ -1,0 +1,25 @@
+archive/
+other/
+temp/
+
+node_modules/
+package.json
+package-lock.json
+yarn.lock
+
+.github/
+.vscode/
+.next/
+.husky/
+
+dist/
+build/
+public/
+coverage/
+
+*.scss
+*.css
+
+# Ignore all JS files:
+# **/*.jsx
+# **/*.js
