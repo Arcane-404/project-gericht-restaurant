@@ -12,10 +12,9 @@ on:
 			- '**.mdx'
 			- '**.yml'
 			- '**.yaml'
-		branch: [
-			main,
-			develop
-		]
+    branches:
+			- main
+			- develop
 
 jobs:
   Build:

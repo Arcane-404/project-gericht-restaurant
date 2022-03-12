@@ -38,4 +38,4 @@ npm run check:lint ||
 # && npm run unbuild
 
 # If everything passes - Now we can commit
-echo '✅✅✅ PRE-COMMIT — Pass! You won (1). ✅✅✅';
+echo '✅✅✅ PRE-COMMIT — Pass! Let us continue (1). ✅✅✅';

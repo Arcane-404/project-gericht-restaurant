@@ -18,4 +18,4 @@ npm run git:check -- $1 || (
 );
 
 # If everything passes... Now we can commit
-echo '✅✅✅ COMMIT-MSG — Pass! You won (2). ✅✅✅';
+echo '✅✅✅ COMMIT-MSG — Pass! Let us continue (2). ✅✅✅';
