@@ -7,7 +7,7 @@ A Modern UI/UX Restaurant Landing Page Website
 - Technologies Used
   - React (Vite)
   - TailwindCSS, Styled-Components, Twin.Macro, Framer-Motion
-  - Husky, Lint-Staged, ESLint, Prettier, EditorConfig, commitlint, commitizen
+  - Husky, Lint-Staged, ESLint, Prettier, EditorConfig, CommitLint, Commitizen
   <!-- - GitHub Actions, StoryBook, Jest -->
 
 ---
