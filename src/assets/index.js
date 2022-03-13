@@ -2,7 +2,7 @@
 export * as fonts from './fonts'
 
 // ICONS
-export * as icons from './icons'
+export * as Icons from './icons'
 
 // IMAGES
 export * as images from './images'

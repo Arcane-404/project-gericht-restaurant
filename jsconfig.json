@@ -7,8 +7,8 @@
       "@/*": ["./*"],
       "@/assets/*": ["./assets/*"],
       "@/components/*": ["./components/*"],
-      "@/constants/*": ["./constants/*"]
-      // "@services/*": ["./services/*"],
+      "@/constants/*": ["./constants/*"],
+      "@services/*": ["./services/*"]
       // "@/utils/*": ["utils/*"],
     }
   },

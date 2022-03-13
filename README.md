@@ -33,6 +33,6 @@ A Modern UI/UX Restaurant Landing Page Website
 
 - Collaborative Environment
   - github actions (yaml: lint, test, build, deploy)
-  - husky, lint-staged, eslint, prettier editorconfig, commitlint, commitizen
+  - husky, lint-staged, eslint, prettier, editorconfig, commitlint, commitizen
   - Storybook (UI driven development)
   - Jest (test driven development)
