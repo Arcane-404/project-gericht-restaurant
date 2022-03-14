@@ -2,19 +2,19 @@ name: Action 🎲 # 1
 
 # pull_request:
 on:
-	push:
+  push:
     branches:
-			- main
+      - main
       - develop
-		paths:
-			- '**.html'
-			- '**.js'
-			- '**.jsx'
-		paths-ignore:
-			- '**.md'
-			- '**.mdx'
-			- '**.yml'
-			- '**.yaml'
+    paths:
+      - '**.html'
+      - '**.js'
+      - '**.jsx'
+    paths-ignore:
+      - '**.md'
+      - '**.mdx'
+      - '**.yml'
+      - '**.yaml'
 
 jobs:
   Action:
@@ -24,9 +24,9 @@ jobs:
       - name: 👟 Start
       - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
       - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
-			- name: ⚪ Checkout repo
-  			uses: actions/checkout@v3
-			- run: echo "💡 The ${{ github.repository }} repository has been cloned to the runner."
+      - name: ⚪ Checkout repo
+        uses: actions/checkout@v3
+      - run: echo "💡 The ${{ github.repository }} repository has been cloned to the runner."
       - run: echo "📀 The workflow is now ready to test your code on the runner."
       - name: List files in the repository
         run: |
