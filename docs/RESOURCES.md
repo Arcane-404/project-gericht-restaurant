@@ -23,6 +23,8 @@ All software apps, technologies, web tools, or articles I used for this project.
   - https://keepachangelog.com/en/1.0.0/
 - other
   - https://www.freecodecamp.org/news/a-beginners-guide-to-git-what-is-a-changelog-and-how-to-generate-it/
+  - https://gist.github.com/brianclements/5d9b8412de1683cce648
+- dependency
   - https://github.com/github-changelog-generator/github-changelog-generator
   - https://github.com/conventional-changelog/conventional-changelog
   - https://github.com/git-chglog/git-chglog

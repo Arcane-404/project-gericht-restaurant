@@ -2,6 +2,15 @@
 
 All noteable changes to this project will be documented in this project.
 
+## 2022-03-14
+
+- enh(style-guide): apply type into theme, convert to compound component
+
+- notes
+  - [ ] apply typography for tablet, laptop, desktop
+  - [ ] change Navbar w/ typography
+  - [ ] start working on Footer
+
 ## 2022-03-12
 
 - fix(navbar): remove uneeded prop and styling
