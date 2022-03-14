@@ -34,7 +34,8 @@ const Logo = styled(motion.img)(() => [
 // ])
 
 const MenuDropDown = styled(motion.button)(() => [
-	tw`text-white text-3xl hover:(text-alt-golden)`,
+	tw`text-white text-3xl hover:(text-secondary-base)`,
+	// tw`type-heading md:(type-heading-md)`,
 ])
 
 // const CtaOpt = styled(motion.menu)(() => [

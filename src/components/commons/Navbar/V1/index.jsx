@@ -13,7 +13,7 @@ const Frame = styled(motion.div)(({ isMenuOpen }) => [
 ])
 
 const MenuDropDown = styled(motion.button)(() => [
-	tw`text-alt-golden text-3xl hover:(text-white)`,
+	tw`text-secondary-base text-3xl hover:(text-white)`,
 	tw`absolute top-6 right-6`,
 ])
 
@@ -25,7 +25,7 @@ const MenuItem = styled(motion.li)(() => [
 	tw`cursor-pointer`,
 ])
 const MenuLink = styled(Link)(() => [
-	tw`font-display text-alt-golden text-3xl`,
+	tw`font-display text-secondary-base text-3xl`,
 	tw`hover:(text-white)`
 	// tw`font-body text-white`,
 	// tw`hover:(text-alt-gray_2)`
@@ -42,7 +42,7 @@ const CtaOptLink = styled(Link)(() => [
 	tw`font-display text-white text-2xl`,
 
 	tw`transition	duration-500`,
-	tw`hover:(border-b-2 border-b-alt-golden)`
+	tw`hover:(border-b-2 border-b-secondary-base)`
 ])
 
 
@@ -81,7 +81,7 @@ const MobileMenu = ({ isMenuOpen, handleToggleMenu }) => {
 						<CtaOptItem key={ uniqid() }>
 							<CtaOptLink to={ path.to }>{ path.label }</CtaOptLink>
 						</CtaOptItem>
-						{ (arr.length - 1 !== index) && <hr tw="w-[1px] h-8 bg-alt-gray_2 border-none" /> }
+						{ (arr.length - 1 !== index) && <hr tw="w-[1px] h-8 bg-primary-2 border-none" /> }
 					</>
 				))}
 			</CtaOpt>
