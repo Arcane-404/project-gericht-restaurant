@@ -3,6 +3,9 @@ name: Test 🧪 # 3
 # pull_request:
 on:
   push:
+    branches:
+			- main
+			- develop
 		paths:
 			- '**.html'
 			- '**.js'
@@ -12,9 +15,6 @@ on:
 			- '**.mdx'
 			- '**.yml'
 			- '**.yaml'
-		branches:
-			- main
-			- develop
 
 jobs:
   Test:
