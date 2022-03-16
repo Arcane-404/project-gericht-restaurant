@@ -78,7 +78,7 @@ README.md
 /components :: ui
 	/blocks 	:: single elements
 	/commons 	:: shareable elements
-	/containers :: widget/partial
+	/containers	:: widget/partial
 	/pages 		:: layout/template
 
 /services :: feature
