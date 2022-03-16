@@ -1,4 +1,3 @@
-# ```yml
 name: Action 🎲 # 1
 
 on:
@@ -14,20 +13,22 @@ jobs:
     steps:
     - name: Start 👟
       run: |
+        echo ""
         echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
         echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
     - name: ⚪ Checkout repo
       uses: actions/checkout@v2
     - run: |
+        echo ""
         echo "💡 The ${{ github.repository }} repository has been cloned to the runner."
         echo "📀 The workflow is now ready to test your code on the runner."
     - name: List files in the repository
       run: |
+        echo ""
         ls ${{ github.workspace }}
     - name: Finish 🏁 (1)
-#       run: echo "continue"
       env: # environment variable :: secret
         MY_NAME: ${{ secrets.MY_NAME }}
-#       name: Finish 🏁 (1)
       run: |
+        echo ""
         echo "🍏 This job's status is ${{ job.status }}. Congrats you are good to go $MY_NAME"

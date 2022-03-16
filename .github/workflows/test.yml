@@ -1,11 +1,10 @@
-```yml
 name: Test 🧪 # 3
 
 on:
   push:
     branches:
-      - main
-      - develop
+    - main
+    - develop
 
 jobs:
   Test:
@@ -18,11 +17,12 @@ jobs:
       - name: ⚪ Checkout repo
         uses: actions/checkout@v2
       - name: 🟢 Setup node ${{ matrix.node-version }}
+        uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
           cache: 'npm'
-        uses: actions/setup-node@v2
-      - name: 👟 Start
-        run: npm ci
-        run: npm run test --if-present
-      - name: 🏁 Finish (3)
+      - name: Start 👟
+        run: yarn ci
+        run: yarn test --if-present
+      - name: Finish 🏁 (3)
+        run: echo "done"
