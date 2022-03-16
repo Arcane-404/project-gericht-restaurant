@@ -7,7 +7,7 @@ on:
       - develop
 
 jobs:
-  Test:
+  test:
     name: Test 🧪
     runs-on: ubuntu-latest
     strategy:
