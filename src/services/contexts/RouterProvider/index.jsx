@@ -4,7 +4,7 @@ import {
 	Route
 } from 'react-router-dom'
 import uniqid from 'uniqid'
-import { ROUTER_LIST } from '@/service/routes'
+import { ROUTER_LIST } from '@/services/routes'
 import { Layout } from '@/components/commons'
 
 const RouterProvider = () => (
