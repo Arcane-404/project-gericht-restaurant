@@ -1,22 +1,10 @@
 name: Test 🧪 # 3
 
-# pull_request:
 on:
   push:
     branches:
       - main
       - develop
-  # allows manual run workflow in action tab
-  # workflow_dipatch:
-    # paths:
-    #   - '**.html'
-    #   - '**.js'
-    #   - '**.jsx'
-    # paths-ignore:
-    #   - '**.md'
-    #   - '**.mdx'
-    #   - '**.yml'
-    #   - '**.yaml'
 
 jobs:
   Test:
