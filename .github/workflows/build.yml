@@ -7,7 +7,7 @@ on:
       - main
       - develop
   # allows manual run workflow in action tab
-  workflow_dipatch:
+  # workflow_dipatch:
     # paths:
     #   - '**.html'
     #   - '**.js'
