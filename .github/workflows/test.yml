@@ -23,7 +23,7 @@ jobs:
           cache: 'npm'
       - name: Start 👟
         run: |
-          yarn ci
+          yarn install
           yarn test --if-present
       - name: Finish 🏁 (3)
         run: echo "done"

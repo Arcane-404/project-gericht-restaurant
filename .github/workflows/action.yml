@@ -18,13 +18,13 @@ jobs:
         echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
     - name: ⚪ Checkout repo
       uses: actions/checkout@v2
-      run: |
+    - name: Cloned 📋
+    - run: |
         echo ""
         echo "💡 The ${{ github.repository }} repository has been cloned to the runner."
         echo "📀 The workflow is now ready to test your code on the runner."
-    - name: List files in the repository
-      run: |
         echo ""
+        echo "List files in the repository"
         ls ${{ github.workspace }}
     - name: Finish 🏁 (1)
       env: # environment variable :: secret

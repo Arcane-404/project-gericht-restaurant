@@ -24,6 +24,7 @@
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview",
+    "test": "echo \"no testing yet\"",
     "_preinstall": "git pull origin develop",
     "_postinstall": "husky install",
     "check:format": "prettier --check \"./src/**/*.{js,jsx,json,md,mdx}\"",
