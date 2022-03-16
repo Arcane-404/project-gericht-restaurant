@@ -12,7 +12,7 @@ jobs:
     name: Action 🎲
     runs-on: ubuntu-latest
     steps:
-    - name: 👟 Start
+    - name: Start 👟
     - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
     - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
     - name: ⚪ Checkout repo
@@ -22,8 +22,10 @@ jobs:
     - name: List files in the repository
       run: |
         ls ${{ github.workspace }}
-    - name: 🏁 Finish (1)
-      env: # Or as an environment variable
+#     - name: Finish 🏁 (1)
+#       run: echo "continue"
+    - env: # environment variable :: secret
         MY_NAME: ${{ secrets.MY_NAME }}
+      name: Finish 🏁 (1)
       run: |
         echo "🍏 This job's status is ${{ job.status }}. Congrats you are good to go $MY_NAME"
