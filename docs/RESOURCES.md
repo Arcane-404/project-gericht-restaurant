@@ -16,6 +16,12 @@ All software apps, technologies, web tools, or articles I used for this project.
   - dark mode : https://wordpress.iqonic.design/product/wp/gericht/
   - light mode : https://wordpress.iqonic.design/product/wp/gericht/home-light/
 
+## Contribute (Article)
+
+- https://www.conventionalcommits.org/en/v1.0.0/
+- https://blog.tericcabrel.com/apply-conventional-commit-style-on-your-project-with-commitlint/
+- https://kapeli.com/cheat_sheets/Conventional_Commits.docset/Contents/Resources/Documents/index
+
 ## Changelog (Article)
 
 - main

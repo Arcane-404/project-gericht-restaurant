@@ -6,6 +6,24 @@
 - Commit Message
 - Extension/Plugin
 
+## Extensions/Plugins
+
+- ConfigEditor :: https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig
+- Prettier :: https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
+- ESLint :: https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
+
+## Subject (e.g. Changlog)
+
+Group changes to describe their impact on the project
+
+| Action    | Purpose                               |
+| --------- | ------------------------------------- |
+| Add       | for new features                      |
+| Change    | for changes in existing functionality |
+| Deprecate | for soon-to-be removed features       |
+| Remove    | for now removed features              |
+| Fixed     | for any bug fixes                     |
+
 ## Type
 
 | Type     | Purpose                                                                                                 |
@@ -24,10 +42,12 @@
 
 ## Scope
 
-- indicates the scope in your application (examples)
-- client, server, database, api
-- authentication, admin, user
-- dashboard, settings, payments
+- indicates the scope in your project
+  - e.g `feat(navbar):`
+- examples
+  - client, server, database, api
+  - authentication, admin, user
+  - dashboard, settings, payments
 
 ## Guidelines
 
@@ -40,7 +60,7 @@
   - indicating if it's breaking changes or the reference issues that this commit refers to
   - name of authors who contributed
 
-## Valid Examples
+### Valid Examples
 
 ```
 docs: correct spelling of CHANGELOG
@@ -69,15 +89,3 @@ Co-authored-by: teco, pinas, pavelito
 - `keyword(scope): [ticket-id]`
 - `type(scope): [descriptor | caption | subject]`
 - `<type>[optional scope]: <description> [optional body] [optional footer(s)]`
-
-## Resource
-
-- https://www.conventionalcommits.org/en/v1.0.0/
-- https://blog.tericcabrel.com/apply-conventional-commit-style-on-your-project-with-commitlint/
-- https://kapeli.com/cheat_sheets/Conventional_Commits.docset/Contents/Resources/Documents/index
-
-## Extensions/Plugins
-
-- ConfigEditor :: https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig
-- Prettier :: https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
-- ESLint :: https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
