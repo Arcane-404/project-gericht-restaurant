@@ -6,15 +6,17 @@ on:
     branches:
       - main
       - develop
-    paths:
-      - '**.html'
-      - '**.js'
-      - '**.jsx'
-    paths-ignore:
-      - '**.md'
-      - '**.mdx'
-      - '**.yml'
-      - '**.yaml'
+  # allows manual run workflow in action tab
+  workflow_dipatch:
+    # paths:
+    #   - '**.html'
+    #   - '**.js'
+    #   - '**.jsx'
+    # paths-ignore:
+    #   - '**.md'
+    #   - '**.mdx'
+    #   - '**.yml'
+    #   - '**.yaml'
 
 jobs:
   Action:
