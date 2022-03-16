@@ -1,0 +1,21 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+echo '🤔⏳💬 Checking branch name and commit message before sending it to the remote repository';
+
+# checking for max length :: 78 characters
+
+# —— Check Branch Name ——
+if [[ $(git rev-parse --abbrev-ref HEAD) = main ]]; then
+    echo '⚪⚪ BRANCH ABORTED — Do not commit on main branch ⚪⚪';
+    exit 1;
+fi;
+
+# —— Check Commit Message ——
+npm run git:check -- $1 || (
+    echo '🔴🔴 COMMIT ABORTED — Your commit message is invalid. 🔴🔴';
+    exit 1;
+);
+
+# If everything passes... Now we can commit
+echo '✅✅✅ COMMIT-MSG — Pass! Let us continue (2). ✅✅✅';

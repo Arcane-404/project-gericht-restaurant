@@ -1,0 +1,91 @@
+{
+  "hero": {
+    "caption": "Chase The New Flavour",
+    "headline": "THE KEY TO FINE DINING",
+    "description": "Sit Tellus Lobortis Sed Senectus Vivamus Molestie. Condimentum Volutpat Morbi Facilisis Quam Scelerisque Sapien. Et, Penatibus Aliquam Amet Tellus",
+    "cta_btn": "Explore Menu"
+  },
+
+  "about": {
+    "heading1": "About Us",
+    "heading2": "Our History",
+    "description": "Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Quis Pharetra Adipiscing Ultrices Vulputate Posuere Tristique. In Sed Odio Nec Aliquet Eu Proin Mauris Et.",
+    "cta_btn": "Know More"
+  },
+
+  "menu": {
+    "caption": "Menu That Fits You Palatte",
+    "heading": "Today's Special",
+    "subheading1": "Wine & Beer",
+    "subheading2": "Cocktails"
+  },
+
+  "story": {
+    "caption": "Chef’s Word",
+    "heading": "What We Believe In",
+    "description": "Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit Auctor Sit. Auctor Sit Iaculis In Arcu. Vulputate Nulla Lobortis Mauris Eget Sit. Nulla Scelerisque Scelerisque Congue Ac Consequat, Aliquam Molestie Lectus Eu. Congue Iaculis Integer Curabitur Semper Sit Nunc.",
+    "name": "Kevin Luo",
+    "role": "Chef & Founder"
+  },
+
+  "awards": {
+    "caption": "Awards & Recognition",
+    "heading": "Our Laurels"
+  },
+
+  "gallery": {
+    "caption": "Instagram",
+    "heading": "Photo Gallery",
+    "description": "Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Volutpat Mattis Ipsum Turpis Elit Elit Scelerisque Egestas Mu.",
+    "cta_btn": "View More"
+  },
+
+  "contact": {
+    "caption": "Contact",
+    "heading": "Find Us",
+    "location": "Lane Ends Bungalow, Whatcroft Hall Lane, Rudheath, CW9 7SG",
+    "opening_hours": {
+      "label": "Opening Hours",
+      "weekday": "Mon - Fri, 10 AM - 2 PM",
+      "weekend": "Sat - Sun, 10 AM - 3 PM"
+    },
+    "cta_btn": "Visit Us"
+  },
+
+  "newsletter": {
+    "caption": "Newsletter",
+    "heading": "Subscribe To Our Newsletter",
+    "subheading": "And Never Miss Latest Updates!",
+    "placeholder": "Enter your e-mail address",
+    "cta_btn": "Subscribe"
+  },
+
+  "footer": {
+    "contact_us": {
+      "heading": "Contact Us",
+      "location": "9 W 53rd St, New York, NY 10019, USA",
+      "phone_1": "+1 212-344-1230",
+      "phone_2": "+1 212-555-1230"
+    },
+    "more_information": {
+      "quote": "\"The Best Way To Find Yourself Is To Lose Yourself In The Service Of Others.\"",
+      "social_links": {
+        "facebook": "https://facebook.com",
+        "twitter": "https://twitter.com",
+        "instagram": "https://instagram.com"
+      }
+    },
+    "working_hours": {
+      "label": "Working Hours",
+      "weekday": {
+        "label": "Monday-Friday,",
+        "time": "8 AM - 12 PM"
+      },
+      "weekend": {
+        "label": "Saturday-Sunday,",
+        "time": "7 AM - 11 AM"
+      }
+    },
+    "copyright": "2021 Gerícht. All Rights Reserved"
+  }
+}

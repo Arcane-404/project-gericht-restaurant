@@ -1,0 +1,26 @@
+archive/
+other/
+temp/
+
+node_modules/
+package.json
+package-lock.json
+yarn.lock
+
+.github/
+.vscode/
+
+dist/
+build/
+public/
+coverage/
+
+client/build/
+client/node_modules/
+
+# Ignore specific files:
+index.js
+
+# Ignore all JS files:
+**/*.jsx
+**/*.js

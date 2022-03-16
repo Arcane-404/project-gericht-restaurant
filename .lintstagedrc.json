@@ -1,0 +1,4 @@
+{
+  "*.{js,jsx,ts,tsx}": "npm run apply:lint",
+  "*.{json,md,mdx}": "npm run apply:format"
+}

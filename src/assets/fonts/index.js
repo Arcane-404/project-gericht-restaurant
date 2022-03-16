@@ -1,0 +1,11 @@
+export { default as cuLight    } from './CormorantUpright/CormorantUpright-Light.ttf'
+export { default as cuRegular  } from './CormorantUpright/CormorantUpright-Regular.ttf'
+export { default as cuMedium   } from './CormorantUpright/CormorantUpright-Medium.ttf'
+export { default as cuSemiBold } from './CormorantUpright/CormorantUpright-SemiBold.ttf'
+export { default as cuBold     } from './CormorantUpright/CormorantUpright-Bold.ttf'
+
+export { default as osLight    } from './OpenSans/OpenSans-Light.ttf'
+export { default as osRegular  } from './OpenSans/OpenSans-Regular.ttf'
+export { default as osMedium   } from './OpenSans/OpenSans-Medium.ttf'
+export { default as osSemiBold } from './OpenSans/OpenSans-SemiBold.ttf'
+export { default as osBold     } from './OpenSans/OpenSans-Bold.ttf'
