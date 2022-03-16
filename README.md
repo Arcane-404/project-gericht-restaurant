@@ -1,9 +1,10 @@
-# Project - Gericht Restaurant
+# Project - Gericht Restaurant (Landing Page)
 
 [GOALS](./docs/GOALS.md) -
 [CHANGELOG](./CHANGELOG.md) -
 [CONTRIBUTE](./docs/CONTRIBUTE.md) -
-[RESOURCES](./docs/RESOURCES.md)
+[RESOURCES](./docs/RESOURCES.md) -
+[STRUCTURE](./docs/STRUCTURE.md)
 
 ---
 
@@ -14,7 +15,7 @@ A Modern UI/UX Restaurant Landing Page Website
 - React (Vite)
 - TailwindCSS, Styled-Components, Twin.Macro, Framer-Motion
 - Husky, Lint-Staged, ESLint, Prettier, EditorConfig, CommitLint, Commitizen
-<!-- - GitHub Actions, StoryBook, Jest -->
+<!-- - GitHub Actions, Storybook, Jest -->
 
 ---
 
@@ -39,7 +40,7 @@ A Modern UI/UX Restaurant Landing Page Website
 
 ## Collaborative Environment
 
-- github actions (yaml: lint, test, build, deploy)
 - husky, lint-staged, eslint, prettier, editorconfig, commitlint, commitizen
+- GitHub Actions (yaml: lint, test, build, deploy)
 - Storybook (UI driven development)
 - Jest (test driven development)

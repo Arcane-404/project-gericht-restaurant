@@ -12,6 +12,13 @@
 	index.js
 ```
 
+### naming conventions
+
+- root: `index.js` | `index.jsx`
+- components: `/PascalCase`
+- hooks: `camelCase.js`
+- extensions: `_.lowercase.js`
+
 ### import/export
 
 - use index files as default/root file

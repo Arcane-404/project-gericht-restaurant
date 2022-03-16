@@ -22,11 +22,11 @@ Group changes to describe their impact on the project
 | Change    | for changes in existing functionality |
 | Deprecate | for soon-to-be removed features       |
 | Remove    | for now removed features              |
-| Fixed     | for any bug fixes                     |
+| Fix       | for any bug fixes                     |
 
 ## Type
 
-| Type     | Purpose                                                                                                 |
+| Action   | Purpose                                                                                                 |
 | -------- | ------------------------------------------------------------------------------------------------------- |
 | build    | changes that affect build system<br>e.g. build tool, ci pipeline, dependencies, project version, etc... |
 | chore    | changes that aren't user-facing                                                                         |
@@ -43,7 +43,7 @@ Group changes to describe their impact on the project
 ## Scope
 
 - indicates the scope in your project
-  - e.g `feat(navbar):`
+  - e.g. `enh(navbar):`, `feat(api):`, `build(files):`
 - examples
   - client, server, database, api
   - authentication, admin, user
@@ -54,7 +54,7 @@ Group changes to describe their impact on the project
 - imperative commands (present tense)
   - e.g. "change" != "changed" | "changes" | "changing"
 - Don't capitalize the first letter
-- No dot (.) at the end
+- No dot (.) at the end of the subject
 - footer commit
   - in end of body message, include, "BREAKING CHANGE"
   - indicating if it's breaking changes or the reference issues that this commit refers to
@@ -84,8 +84,8 @@ refers to JIRA-1337
 Co-authored-by: teco, pinas, pavelito
 ```
 
-## Options
+## Format
 
-- `keyword(scope): [ticket-id]`
+- `type(scope): [ticket-id]`
 - `type(scope): [descriptor | caption | subject]`
-- `<type>[optional scope]: <description> [optional body] [optional footer(s)]`
+- `<keyword type>[optional scope]: <description> [optional body] [optional footer(s)]`

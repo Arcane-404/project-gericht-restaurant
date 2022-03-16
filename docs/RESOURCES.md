@@ -4,7 +4,7 @@ All software apps, technologies, web tools, or articles I used for this project.
 
 ## Project Resources
 
-- SITE : https://gericht-restaurant.com/#home
+- DEMO : https://gericht-restaurant.com/#home
 - REPO : https://github.com/adrianhajdin/project_modern_ui_ux_restaurant
 - DESIGN : https://www.figma.com/file/yvClSI9AZBRX8UaaGEByF3/Modern-Ui%2FUx%3A-Gericht?node-id=53%3A2
 - VIDEO : https://www.youtube.com/watch?v=4oV65GVVits
