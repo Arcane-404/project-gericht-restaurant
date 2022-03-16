@@ -14,16 +14,16 @@ jobs:
       matrix:
         node-version: [12.x, 14.x, 16.x]
     steps:
-      - name: ⚪ Checkout repo
-        uses: actions/checkout@v2
-      - name: 🟢 Setup node ${{ matrix.node-version }}
-        uses: actions/setup-node@v2
-        with:
-          node-version: ${{ matrix.node-version }}
-          cache: 'npm'
-      - name: Start 👟
-        run: |
-          yarn install
-          yarn test --if-present
-      - name: Finish 🏁 (3)
-        run: echo "done"
+    - name: ⚪ Checkout repo
+      uses: actions/checkout@v2
+    - name: 🟢 Setup node ${{ matrix.node-version }}
+      uses: actions/setup-node@v2
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'npm'
+    - name: Start 👟
+      run: |
+        yarn install
+        yarn test --if-present
+    - name: Finish 🏁 (3)
+      run: echo "done"

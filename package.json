@@ -22,8 +22,9 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "_build": "vite build",
     "serve": "vite preview",
+    "build": "echo \"no building yet\"",
     "test": "echo \"no testing yet\"",
     "_preinstall": "git pull origin develop",
     "_postinstall": "husky install",
