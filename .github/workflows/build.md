@@ -8,7 +8,7 @@ on:
       - develop
 
 jobs:
-  build:
+  Build:
     name: Build 📦
     runs-on: ubuntu-latest
     strategy:
