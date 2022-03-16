@@ -2,6 +2,17 @@
 
 All noteable changes to this project will be documented in this project.
 
+## 2022-03-15
+
+- build: finally have GitHub Action working
+- enh(navbar): update mobile NavBar, include type
+
+- notes
+  - later
+    - add Test: testing w/ Storybook + Jest
+    - add Build: building w/ Vite + TailwindCSS
+    - add Publish: deploy to Netlify/Heroku, get SECRET_TOKEN
+
 ## 2022-03-14
 
 - enh(style-guide): apply type into theme, convert to compound component
