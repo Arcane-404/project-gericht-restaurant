@@ -22,7 +22,8 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: 'npm'
       - name: Start 👟
-        run: yarn ci
-        run: yarn build --if-present
+        run: |
+          yarn ci
+          yarn build --if-present
       - name: Finish 🏁 (2)
         run: echo "done"
