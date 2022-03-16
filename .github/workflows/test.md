@@ -1,4 +1,5 @@
-name: Build 📦 # 2
+```yml
+name: Test 🧪 # 3
 
 on:
   push:
@@ -7,8 +8,8 @@ on:
       - develop
 
 jobs:
-  build:
-    name: Build 📦
+  test:
+    name: Test 🧪
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -17,11 +18,11 @@ jobs:
       - name: ⚪ Checkout repo
         uses: actions/checkout@v2
       - name: 🟢 Setup node ${{ matrix.node-version }}
-        uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
           cache: 'npm'
+        uses: actions/setup-node@v2
       - name: 👟 Start
         run: npm ci
-        run: npm run build --if-present
-      - name: 🏁 Finish (2)
+        run: npm run test --if-present
+      - name: 🏁 Finish (3)
