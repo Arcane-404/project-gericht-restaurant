@@ -2,13 +2,15 @@ import tw, { styled } from 'twin.macro'
 import { Root } from '@/components/commons'
 import { images } from '@/assets'
 import { MobileMenu } from './MobileMenu'
+// import { TabletMenu } from './TabletMenu'
+// import { DesktopMenu } from './DesktopMenu'
 
 const Frame = styled(Root.Frame)(() => [
-	tw`bg-black relative`,
+	tw`bg-black`,
 ])
 
 const Container = styled(Root.Container)(() => [
-	tw`flex justify-between items-center py-4`,
+	tw`flex justify-between items-center py-4 relative`,
 ])
 
 
@@ -42,6 +44,9 @@ const Navbar = () => {
 		<Frame as="nav">
 			<Container>
 				<MobileMenu { ...menuProps } />
+				{/* WIP */}
+				{/* <TabletMenu { ...menuProps } /> */}
+				{/* <DesktopMenu { ...menuProps } /> */}
 			</Container>
 		</Frame>
 	)
