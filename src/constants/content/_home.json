@@ -68,21 +68,16 @@
       "phone_2": "+1 212-555-1230"
     },
     "more_information": {
-      "quote": "\"The Best Way To Find Yourself Is To Lose Yourself In The Service Of Others.\"",
-      "social_links": {
-        "facebook": "https://facebook.com",
-        "twitter": "https://twitter.com",
-        "instagram": "https://instagram.com"
-      }
+      "quote": "\"The Best Way To Find Yourself Is To Lose Yourself In The Service Of Others.\""
     },
     "working_hours": {
-      "label": "Working Hours",
+      "heading": "Working Hours",
       "weekday": {
-        "label": "Monday-Friday,",
+        "label": "Monday - Friday,",
         "time": "8 AM - 12 PM"
       },
       "weekend": {
-        "label": "Saturday-Sunday,",
+        "label": "Saturday - Sunday,",
         "time": "7 AM - 11 AM"
       }
     },

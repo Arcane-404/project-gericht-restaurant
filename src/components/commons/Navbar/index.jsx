@@ -41,7 +41,7 @@ const menuProps = {
 
 const Navbar = () => {
 	return (
-		<Frame as="nav">
+		<Frame as="nav" alt>
 			<Container>
 				<MobileMenu { ...menuProps } />
 				{/* WIP */}

@@ -1,4 +1,4 @@
-import { Navbar } from '@/components/commons'
+import { Navbar, Footer } from '@/components/commons'
 
 // isAlt
 const Layout = ({ children }) => {
@@ -6,6 +6,7 @@ const Layout = ({ children }) => {
 		<>
 			<Navbar />
 			{ children }
+			<Footer />
 			{/* { !isAlt && <Footer /> } */}
 		</>
 	)

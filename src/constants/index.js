@@ -1,1 +1,1 @@
-export * as CONTENT from './content'
+export * as LISTING from './listing'
