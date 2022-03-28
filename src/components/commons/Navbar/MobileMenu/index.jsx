@@ -14,7 +14,7 @@ const MobileMenu = ({ logo, menuList, ctaOptList }) => {
 
 	return (
 		<>
-			<Logo src={ logo.image } alt={ logo.alt } />
+			<Logo src={ logo.image } alt={ logo.alt_info } />
 
 			<Menu.Button status="open" onClick={ handleToggleMenu }>
 				<Icons.OpenMenu />

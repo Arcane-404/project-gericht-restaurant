@@ -8,7 +8,7 @@ export * as Icons from './icons'
 export * as images from './images'
 
 // SVGS
-export { default as spoonIcon } from './svgs/spoon.svg'
+export * as Svgs from './svgs'
 
 // VIDEOS
 export { default as meal } from './videos/meal.mp4'

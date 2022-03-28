@@ -1,0 +1,7 @@
+{
+  "port": 8000,
+  "delay": 1000,
+  "watch": true,
+  "routes": "./config/server/_routes.json",
+  "snapshots": "./config/server/snapshots/"
+}

@@ -118,9 +118,9 @@ module.exports = ({ addComponents, theme }) => {
 		'.type-button': {
 			'color': theme('colors.neutral.black'),
 			'font-family': theme('fontFamily.body-alt'),
-			'font-size': theme('fontSize.base'),
+			'font-size': theme('fontSize.lg'),
 			'font-weight': theme('fontWeight.bold'),
-			'line-height': theme('lineHeight.loose'),
+			'line-height': theme('lineHeight.relaxed'),
 			'letter-spacing': theme('letterSpacing.wide'),
 			'text-transform': 'capitalize',
 		},
@@ -129,9 +129,9 @@ module.exports = ({ addComponents, theme }) => {
 			'color': theme('colors.neutral.white'),
 			'font-family': theme('fontFamily.body-alt'),
 			'font-size': theme('fontSize.base'),
-			'font-weight': theme('fontWeight.normal'),
-			// 'line-height': theme('lineHeight.loose'),
-			// 'letter-spacing': theme('letterSpacing.wide'),
+			'font-weight': theme('fontWeight.semibold'),
+			'line-height': theme('lineHeight.loose'),
+			'letter-spacing': theme('letterSpacing.wider'),
 		}
 	})
 }

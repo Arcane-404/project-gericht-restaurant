@@ -2,25 +2,30 @@ import { css } from 'twin.macro'
 
 export const browserAccessory = (css`
 	::selection {
-    background-color: #065EC8 !important;
+    background-color: #DCCA87 !important;
 		color: #FFF !important;
 	}
 
 	::-webkit-scrollbar {
-		background-color: #181919;
-		width: 16px;
+		background-color: #242424;
+		/* width: 1rem; */
+		width: 0.5rem;
 	}
 	::-webkit-scrollbar-corner {
-		background-color: #252627;
+		background-color: #242424;
 	}
 	::-webkit-scrollbar-thumb {
 		border: 3.5px solid transparent !important;
-		border-radius: 1.5em;
-		background-color: #515659;
-		background-clip: content-box;
+		/* border-radius: 1vmax; */
+		background-color: #DCCA87;
+		/* background-clip: content-box; */
 	}
 	::-webkit-scrollbar-thumb:hover {
-		background: #616061;
-		background-clip: content-box;
+		background: #F5EFDB;
+		/* background-clip: content-box; */
+	}
+	::-webkit-resizer {
+		background-color: transparent;
+		resize: none;
 	}
 `)

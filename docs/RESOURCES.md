@@ -16,6 +16,42 @@ All software apps, technologies, web tools, or articles I used for this project.
   - dark mode : https://wordpress.iqonic.design/product/wp/gericht/
   - light mode : https://wordpress.iqonic.design/product/wp/gericht/home-light/
 
+## API HTTP Request w/ cURL + JSON-Server
+
+```sh
+CLEAR == clear
+curl -v == show spec output
+curl -i == include header response
+
+GET ALL
+curl -X GET -H "Content-Type: application/json"  "http://localhost:8000/api/newsletter"
+
+GET ONE
+curl -X GET -H "Content-Type: application/json"  "http://localhost:8000/api/newsletter/1"
+
+POST
+curl -X POST -H "Content-Type: application/json" -d '{"email" : "new@example.com"}'  "http://localhost:8000/api/newsletter"
+
+PUT
+curl -XPUT -H "Content-Type: application/json" -d '{"email" : "new@another.com"}'  "http://localhost:8000/newsletter/3"
+
+DELETE
+curl -XDELETE -H "Content-Type: application/json"  "http://localhost:8000/newsletter/3"
+```
+
+- main
+  - https://www.journaldev.com/10660/json-server
+- other
+  - https://flaviocopes.com/http-curl/
+  - https://hackernoon.com/how-to-easily-use-curl-for-http-requests-db3249c5d4e6
+  - https://medium.com/codingthesmartway-com-blog/create-a-rest-api-with-json-server-36da8680136d
+
+## TailwindCSS Config
+
+- main : https://tailwindcss.com/docs/configuration
+- spec : https://github.com/tailwindlabs/tailwindcss/blob/master/stubs/defaultConfig.stub.js
+- variants : https://github.com/ben-rogerson/twin.macro/blob/master/src/config/variantConfig.js
+
 ## Contribute (Article)
 
 - https://www.conventionalcommits.org/en/v1.0.0/

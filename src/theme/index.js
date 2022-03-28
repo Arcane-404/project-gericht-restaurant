@@ -1,5 +1,5 @@
 export { browserAccessory } from './_browserAccessory'
-export { fontFamily } from './_fontFamily'
+export { fontFace } from './_fontFace'
 
 // LAST IMPORT
 export { GlobalStyles } from './_GlobalStyles'

@@ -1,6 +1,10 @@
+import { Layout, Newsletter } from '@/components/commons'
+
 const Home = () => {
 	return (
-		<div>Home Page</div>
+		<Layout>
+			<Newsletter />
+		</Layout>
 	)
 }
 

@@ -14,6 +14,11 @@ export default defineConfig({
 			replacement: resolve(__dirname, 'src'),
 		} ],
   },
+	server: {
+		proxy: {
+			'api/*': 'http://localhost:8000/',
+		}
+	},
   plugins: [
 		htmlPlugin(htmlPluginOptions),
     react({

@@ -1,7 +1,7 @@
 import { css } from 'twin.macro'
 import { fonts } from '../assets'
 
-export const fontFamily = (css`
+export const fontFace = (css`
   /* Cormorant Upright */
   @font-face {
     font-family: 'Cormorant Upright';
@@ -33,7 +33,7 @@ export const fontFamily = (css`
     font-weight: 700;
     src: url(${ fonts.cuBold }) format('truetype');
   }
-  
+
   /* Open Sans */
   @font-face {
     font-family: 'Open Sans';

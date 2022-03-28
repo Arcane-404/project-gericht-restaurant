@@ -3,11 +3,13 @@ const {
 	test,
 	content,
 	center,
+	beforeAfter,
 	/*  */
 	fontFamily,
 	colors,
 	screens,
 	/*  */
+	motion,
 	typography,
 } = require('./config')
 
@@ -28,7 +30,9 @@ module.exports = {
 		}
   },
   plugins: [
+		plugin(motion),
 		plugin(typography),
+		plugin(beforeAfter),
 		plugin(test),
 		plugin(content),
 		plugin(center),

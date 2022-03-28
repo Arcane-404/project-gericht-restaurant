@@ -3,15 +3,13 @@ import { Root } from '@/components/commons'
 import {
 	Wrapper,
 	Logo,
-	Spoon,
 	Heading,
 	Subheading,
 	Text,
 	Copyright,
 } from './_.styles'
 import { SocialLinks } from './SocialLinks'
-import { gericht } from '@/assets/images'
-import { spoonIcon } from '@/assets'
+import { Svgs, images } from '@/assets'
 
 const Footer = () => {
 	return (
@@ -22,15 +20,17 @@ const Footer = () => {
 						<Heading>{ HOME.footer.contact_us.heading }</Heading>
 						<Wrapper.SubBox>
 							<Text>{ HOME.footer.contact_us.location }</Text>
+						</Wrapper.SubBox>
+						<Wrapper.SubBox>
 							<Text>{ HOME.footer.contact_us.phone_1 }</Text>
 							<Text>{ HOME.footer.contact_us.phone_2 }</Text>
 						</Wrapper.SubBox>
 					</Wrapper.Box>
 
 					<Wrapper.Box>
-						<Logo src={ gericht } alt="gericht logo" />
-						<Text>{ HOME.footer.more_information.quote }</Text>
-						<Spoon src={ spoonIcon } alt="spoon icon" />
+						<Logo src={ images.gericht } alt="gericht logo" />
+						<Text vr="white">{ HOME.footer.quote }</Text>
+						<Svgs.Spoon />
 						<SocialLinks />
 					</Wrapper.Box>
 
@@ -38,11 +38,11 @@ const Footer = () => {
 						<Heading>{ HOME.footer.working_hours.heading }</Heading>
 						<Wrapper.SubBox>
 							<Subheading>{ HOME.footer.working_hours.weekday.label }</Subheading>
-							<Text>{ HOME.footer.working_hours.weekday.time }</Text>
+							<Text vr="gold">{ HOME.footer.working_hours.weekday.time }</Text>
 						</Wrapper.SubBox>
 						<Wrapper.SubBox>
 							<Subheading>{ HOME.footer.working_hours.weekend.label }</Subheading>
-							<Text>{ HOME.footer.working_hours.weekend.time }</Text>
+							<Text vr="gold">{ HOME.footer.working_hours.weekend.time }</Text>
 						</Wrapper.SubBox>
 					</Wrapper.Box>
 				</Wrapper>

@@ -3,5 +3,5 @@ module.exports = {
 	'tablet': '768px',
 	'laptop': '1024px',
 	'desktop': '1280px',
-	'2xl': '1536px',
+	'monitor': '1536px',
 }
