@@ -8,10 +8,16 @@ export const DevModeForm = ({ active = false, setState, initState, tempState }) 
   return (
     <div>
       <input
-type="checkbox" name="devMode" id="devMode"
-checked={ isDev } onChange={ toggleDevMode }
+				type="checkbox"
+				name="devMode"
+				id="devMode"
+				checked={ isDev }
+				onChange={ toggleDevMode }
       />
-      <label htmlFor="devMode">{' '}<b>Dev Mode :: </b> <code>{`${isDev}`}</code></label>
+      <label htmlFor="devMode">
+				{' '}<b>Dev Mode :: </b>
+				<code>{`${ isDev }`}</code>
+			</label>
     </div>
   )
 }

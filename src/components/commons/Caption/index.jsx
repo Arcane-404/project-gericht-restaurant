@@ -9,9 +9,9 @@ const Text = styled(motion.p)(() => [
 	tw`type-caption text-xl mb-2.5 desktop:(text-2xl)`,
 ])
 
-const Caption = ({ children, text, center = false }) => {
+const Caption = ({ children, text, center = false, ...rest }) => {
 	return (
-		<Frame center={ center }>
+		<Frame center={ center } { ...rest }>
 			<Text>{ children || text }</Text>
 			<Svgs.Spoon />
 		</Frame>

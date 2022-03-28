@@ -2,8 +2,7 @@ import { motion } from 'framer-motion'
 import tw, { styled } from 'twin.macro'
 
 export const Frame = styled(motion.div)(({ isAlt = false }) => [
-	tw`border-black`,
-  tw`px-4 tablet:(px-6) 2xl:(px-0)`,
+  tw`px-4 tablet:(px-6) desktop:(px-8)`,
 	!isAlt && tw`py-24`
 ])
 

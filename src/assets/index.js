@@ -7,6 +7,9 @@ export * as Icons from './icons'
 // IMAGES
 export * as images from './images'
 
+// LOADERS
+export * as Loaders from './loaders'
+
 // SVGS
 export * as Svgs from './svgs'
 

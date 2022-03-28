@@ -5,6 +5,7 @@
 - incorporate GitHub Actions
 - add Test trigger w/ Storybook + Jest
 - add Build trigger w/ React + Vite + TailwindCSS
+- deploy to website to Vercel | Firebase | Netlify
 
 ## Website Challenge
 

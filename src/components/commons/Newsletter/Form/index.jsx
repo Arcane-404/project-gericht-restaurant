@@ -1,10 +1,10 @@
 import { useController } from 'react-hook-form'
-import { FallingLines } from 'react-loader-spinner'
 // import { DevTool } from '@hookform/devtools'
 // import { DevModeForm } from '@/utils'
+import { Loaders } from '@/assets'
+import  { Alert } from '@/components/commons'
 import { HOME } from '@/constants/content'
 import { Form } from './_.styles'
-import  { Alert } from '../Alert'
 import { useNewsletter } from './_.form'
 
 const FieldInput = ({ type = 'text', name, control, ...rest }) => {
@@ -15,14 +15,11 @@ const FieldInput = ({ type = 'text', name, control, ...rest }) => {
 const FieldSubmit = ({ children, text, disabled, isSubmitting, ...rest }) => {
 	return (
 		<Form.Submit disabled={ disabled } { ...rest }>
-			{
-				(isSubmitting)
-				? <FallingLines width="30" color="#C8553D" />
-				: (children || text)
-			}
+			{ (isSubmitting) ? <Loaders.Spinner /> : (children || text) }
 		</Form.Submit>
 	)
 }
+
 
 const NewsletterForm = () => {
 	const {

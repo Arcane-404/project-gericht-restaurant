@@ -4,13 +4,9 @@ import tw, { styled } from 'twin.macro'
 export const Form = styled(motion.form).attrs(() => ({
 	'aria-label': 'Newsletter email information'
 }))(() => [
-	tw`flex flex-col gap-6 relative`,
+	tw`flex flex-col gap-8 relative`,
 	tw`laptop:(w-[700px] mt-4 mx-auto)`
 ])
-
-// Form.Field = styled(motion.fieldset)(() => [
-// 	tw`relative`
-// ])
 
 Form.Input = styled(motion.input).attrs(({ isInvalid = false }) => ({
 	type: 'text',
@@ -49,5 +45,5 @@ Form.Submit = styled(motion.button).attrs(({ disabled = false }) => ({
 	active:(text-neutral-black before:(h-1/2) after:(h-1/2))
 	disabled:(bg-opacity-50 before:(bg-opacity-50) after:(bg-opacity-50))
 	`,
-	tw`laptop:(absolute right-1.5 top-1.5 bottom-1.5)`
+	tw`tablet:(absolute right-1.5 top-1.5 bottom-1.5)`
 ])

@@ -2,9 +2,9 @@ import { motion } from 'framer-motion'
 import tw, { styled, css } from 'twin.macro'
 
 export const Wrapper = styled(motion.div)(() => [
-	tw`border border-primary-5 bg-primary-4 py-8 px-4`,
+	tw`border border-primary-5 bg-primary-4 py-8 px-6`,
 	css`box-shadow: 22px 30px 95px 1px rgb(0 0 0 / 70%);`,
-	tw`laptop:(p-20)`
+	tw`tablet:(p-10) laptop:(p-20)`
 ])
 
 export const Heading = styled(motion.h2)(() => [

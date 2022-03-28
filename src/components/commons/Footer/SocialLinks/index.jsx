@@ -7,7 +7,8 @@ const Social = styled(motion.div)(() => [
 	tw`flex gap-6`
 ])
 Social.Link = styled(motion.a)(() => [
-	tw`text-white text-2xl`
+	tw`text-white text-2xl`,
+	tw`hover:(text-accent-base)`
 ])
 
 const SocialLinks = () => {

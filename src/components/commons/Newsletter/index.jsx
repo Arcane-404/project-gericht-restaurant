@@ -1,7 +1,6 @@
 import { HOME } from '@/constants/content'
-import { Root } from '@/components/commons'
+import { Root, Caption } from '@/components/commons'
 import { Wrapper, Heading } from './_.styles'
-import { Caption } from './Caption'
 import { NewsletterForm } from './Form'
 
 const Newsletter = () => {
